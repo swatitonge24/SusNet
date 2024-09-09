@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "susnet-software-e0c71",
+    "susnet-front-end": "susnet-software-e0c71"
+  },
+  "targets": {
+    "susnet-software-e0c71": {
+      "hosting": {
+        "susnet-front-end": [
+          "susnet-front-end"
+        ]
+      }
+    }
+  },
+  "etags": {},
+  "dataconnectEmulatorConfig": {}
+}
