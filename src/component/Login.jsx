@@ -8,38 +8,33 @@ const Login = () => {
     setIsLoginForm(!isLoginForm);
   }
   return (
-    <div>
+    <div className='mt-28'>
        
-      <form className='bg-gray-200 my-3 mx-auto w-4/12  p-10 rounded-lg bg-opacity-50'>
-        <h1 className='font-semibold text-2xl py-4 text-center'>{isLoginForm? "Welcome to SusNet,A Sustainable AI-Enabled Energy Management Network."
+      <form className='bg-cyan-50 shadow-xl my-3 mx-auto w-4/12  p-10 rounded-lg bg-opacity-50 '>
+        <h1 className='font-bold  text-xl py-4 text-center'>{isLoginForm? "Welcome to SusNet,A Sustainable AI-Enabled Energy Management Network."
         : "Register Your SusNet Hardware"}</h1>
        
         
         
         {!isLoginForm && (
           
-        <input type="text" placeholder='Eircode' 
-        className='p-3 my-1 w-full bg-gray-200 rounded-md'/>)}
+        <input type="text" placeholder='Enter your Name' 
+        className='p-3 my-1 w-full shadow-lg border-b-2 bg-gray-100 rounded-md'/>)}
 
         
-       {!isLoginForm &&( <input type="text" placeholder="Type of Account" 
-        className='p-3 my-1 w-full bg-gray-200 rounded-md'/>
-        )
-}
+      
         <input type="text"placeholder='Email Address' 
-        className='p-3 my-1 w-full bg-gray-200 rounded-md'/>
+        className='p-3 my-1 w-full shadow-lg bg-gray-100 rounded-md'/>
 
         
         <input type="password"placeholder='Password' 
-        className='p-3 my-1 w-full bg-gray-200 rounded-md'/>
-        <button className='p-3 my-6 bg-red-400 w-full font-bold  rounded-lg'>
+        className='p-3 my-1 w-full bg-gray-100 rounded-md shadow-lg'/>
+        <button className='p-3 my-6 bg-green-400 w-1/2 ml-24 font-bold hover:bg-orange-500  shadow-2xl rounded-lg'>
           {isLoginForm ?"Sign In":"Sign Up"}</button>
           <p className=' text-center cursor-pointer' onClick={toggleLoginForm}>
             {isLoginForm ?"Not registered yet? Click here to Register": "Already registered? Sign in Now"}</p>
       </form>
-      <button title="assistance" class="fixed z-90 bottom-10 right-8 bg-orange-600 w-12 h-12 rounded-full drop-shadow-lg flex justify-center 
-    items-center text-white text-xl hover:bg-blue-700 hover:drop-shadow-2xl 
-    hover:animate-bounce duration-300" > ✨ </button>
+      
     </div>
   )
 }

@@ -157,7 +157,7 @@ const EnvironmentalDataAnalytics = () => {
 
   return (
     <>
-      <div className='flex flex-col'>
+      <div className=' mt-28 flex flex-col'>
         <div className='p-2 bg-sky-400 w-full h-[400px] flex mx-auto'>
           <div className='basis-[55%]'>
             <h1 className='text-4xl px-32 pt-32 font-serif font-extrabold text-white'>

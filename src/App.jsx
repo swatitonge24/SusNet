@@ -1,4 +1,5 @@
 import React from "react"
+import './App.css'
 import Header from "./component/Header";
 import {createBrowserRouter,Outlet,RouterProvider} from "react-router-dom";
 import ReactDOM from 'react-dom/client';
@@ -10,6 +11,7 @@ import Documentation from "./component/Documentation";
 
 
 import Energybill from "./component/Energybill";
+import Hangging_btn from "./component/Hangging_btn";
 
 
 
@@ -20,8 +22,10 @@ import Energybill from "./component/Energybill";
       <div>
         
         <Header/>
+       
         
         <Outlet/>
+        <Hangging_btn/>
         
       
         
