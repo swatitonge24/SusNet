@@ -1,14 +1,15 @@
 import React from 'react'
-import susnetkit from '../assests/susnetkit.png'
+import susnet from '../assests/susnet.png'
 import { CheckIcon } from '@heroicons/react/16/solid'
+
 
 
 const SUSNET = () => {
   return (
     
-        <div className='bg-green-900 mt-[650px]  absolute w-full h-[500px] flex max-auto'>
+        <div className='bg-cyan-800 mt-[650px]  absolute w-full h-[500px] flex max-auto'>
 <div className='basis-[45%]'>
-<img className='absolute w-52 h-[500px] mb-7 ml-36' src={susnetkit}/>
+<img className='absolute w-[560px] h-[350px] mb-7 bg-center px-20  rounded-xl  mt-16' src={susnet}/>
 </div>
 <div className='basis-[55%]'>
   <h1 className='font-bold text-4xl font-serif text-white mt-14'>Susnet</h1>

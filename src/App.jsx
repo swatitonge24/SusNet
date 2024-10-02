@@ -2,16 +2,16 @@ import React from "react"
 import './App.css'
 import Header from "./component/Header";
 import {createBrowserRouter,Outlet,RouterProvider} from "react-router-dom";
-import ReactDOM from 'react-dom/client';
+
 import Error from "./component/Error";
 import Login from "./component/Login";
 import Homepage from "./component/Homepage";
 import EnvironmentalDataAnalytics from "./component/EnvironmentalDataAnalytics";
 import Documentation from "./component/Documentation";
-
-
 import Energybill from "./component/Energybill";
 import Hangging_btn from "./component/Hangging_btn";
+import Footer from "./component/Footer";
+import QuizBrowsePage from "./component/QuizBrowsePage";
 
 
 
@@ -26,6 +26,7 @@ import Hangging_btn from "./component/Hangging_btn";
         
         <Outlet/>
         <Hangging_btn/>
+        <Footer/>
         
       
         
@@ -59,6 +60,7 @@ import Hangging_btn from "./component/Hangging_btn";
           path:"/login",
           element:<Login/>,
         },
+        
        
         
        

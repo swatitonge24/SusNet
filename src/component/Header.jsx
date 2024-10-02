@@ -1,13 +1,13 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
 import logo from '../assests/logo.png';
-import { useState } from 'react';
+
 
 
 const Header = () => {
   return (
         
-<div className=' nav fixed top-0 right-0 z-10 bg-gray-50 w-full h-28 shadow-2xl' >
+<div className=' nav fixed top-0 right-0 z-10 bg-gray-50 w-full h-28 shadow-2xl pl-10' >
 <img className='w-28 h-20 mt-6 px-6 mr-32' src={logo}/>
     <ul className=' md:flex p-4 m-4  font-sans  '>
     <li className=' text:semibold   md:px-3 p-2  font-semibold '><NavLink to ="/">Home</NavLink></li><li className='mt-2'>|</li>
