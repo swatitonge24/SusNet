@@ -9,14 +9,14 @@ import { EnvelopeIcon, PhoneArrowDownLeftIcon } from '@heroicons/react/16/solid'
 
 const Footer = () => {
   return (
-    <div className=' absolute mt-[3100px] w-full h-[100px] bg-gray-100 overflow-x-hidden'>
+    <div className=' absolute mt-[3300px] w-full h-[100px] bg-gray-100 overflow-x-hidden'>
       <div className='flex justify-between mt-8 '>
       <div className='col-4  '>
       <img className='w-24 h-10  px-6 mr-32 ' src={logo}/>
     </div>
     <div className='col-4 ml-20'>
-      <PhoneArrowDownLeftIcon className='w-4 h-4 mr-40'></PhoneArrowDownLeftIcon><br/>
-      <EnvelopeIcon className='w-4 h-4  mr-40'></EnvelopeIcon>
+      <PhoneArrowDownLeftIcon className='w-4 h-4 mr-40'>+353 899832147</PhoneArrowDownLeftIcon><br/>
+      <EnvelopeIcon className='w-4 h-4  mr-40'>info@hitoai.com</EnvelopeIcon>
 
 
       </div>

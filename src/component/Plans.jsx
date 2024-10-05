@@ -2,20 +2,54 @@
 
 import tick from '../assests/tick.svg'
 import cross from '../assests/cross.svg'
+import { useState } from 'react';
 
 
 
 
 const Plans = () => {
 
-  
+  const [isHome, setIsHome] = useState(true); // Default state is "Home"
+
+  const handleToggle = () => {
+    setIsHome(!isHome);
+  };
 
   return (
+    <section id="plans">
 
       <div className=' absolute mt-[2000px] bg-gray-100  h-[690px] w-full overflow-x-hidden  '>
              <h1 className='realtive mt-14 font-bold text-4xl font-serif text-center'>Susnet Plans</h1>
              <p className='text-center text-sm mt-2'>Choose from our premium plans to save your hand earn money and enjoy a hassle-free sustainable solution </p>
-            
+            {/* toggle switch */}
+<div className="flex justify-center items-center mt-3">
+      <div className="flex items-center">
+        <span className={`mr-3 text-lg ${isHome ? 'text-green-800' : 'text-gray-500'}`}>
+          Home
+        </span>
+        
+        {/* Toggle Switch */}
+        <div
+          className={`relative inline-flex items-center h-6 rounded-full w-11 cursor-pointer transition-colors duration-300 ease-in-out ${isHome ? 'bg-cyan-800' : 'bg-gray-300'}`}
+          onClick={handleToggle}
+        >
+          <span
+            className={`transform transition-transform duration-300 ease-in-out inline-block w-5 h-5 bg-white rounded-full shadow ${isHome ? 'translate-x-1' : 'translate-x-6'}`}
+          />
+        </div>
+        
+        <span className={`ml-3 text-lg ${!isHome ? 'text-green-800' : 'text-gray-500'}`}>
+          Business
+        </span>
+      </div>
+
+      <div className="mt-8">
+        <h2 className="text-2xl font-semibold text-center">
+          {isHome ? '' : ''}
+        </h2>
+      </div>
+    </div>
+
                 
        <div className='grid lg:grid-cols-3 gap-0 mt-20 mr-10'>
        <div className=' w-[450px]  rounded-md  cursor-pointer pr-10 '>
@@ -25,14 +59,15 @@ const Plans = () => {
       {/* {Card Header} */}
       
       <div className=' px-1 py-3 '>
-        <h1 className='text-4xl font-semibold px-4 font-serif '>Basic</h1>
-        <p className='text-sm ml-7 mt-2 text-gray-400'>Entry Level Features</p>
+        <h1 className='text-4xl font-semibold px-4 font-serif ml-3 '>Basic</h1>
+        <p className='text-sm ml-10 mt-2  text-gray-400'>Entry Level Features</p>
 
         <div className='  justify-center mt-8 '>
         <span className='ml-9 text-gray-400 text-lg font-normal w-60 h-36'></span>
-        <span className='text-4xl font-bold ml-1' > €330</span><br/>
+       
         
-<span className="text-gray-400 text-sm ml-8 pt-4">+ Susnet Plan €10/Month
+<span className="text-black text-4xl font-bold mr-14 pt-2"> 
+   €10 <span className='text-gray-400 text-sm font-normal'>/month</span>
 </span>
         </div>
         
@@ -73,14 +108,13 @@ const Plans = () => {
       {/* {Card Header} */}
       
       <div className=' px-1 py-3 '>
-        <h1 className='text-4xl font-semibold px-4 font-serif '>Standard</h1>
-        <p className='text-sm ml-7 mt-2 text-gray-400'>Essential Features</p>
+        <h1 className='text-4xl font-semibold px-4 font-serif ml-4'>Standard</h1>
+        <p className='text-sm ml-10 mt-2 text-gray-400'>Essential Features</p>
 
-        <div className='ml-8 justify-center mt-8'>
+        <div className='ml-8 justify-center mt-4'>
           
-       <span className='text-4xl font-bold'>
-  €750</span><br/>
-  <span className='text-gray-400 ml-2 text-sm'> + Susnet Plan €20/Month</span>
+      
+  <span className='text-black ml-2 text-4xl font-bold'>  €20 <span className='text-gray-400 text-sm font-normal'>/month</span></span>
         </div>
         
         </div>
@@ -117,14 +151,14 @@ const Plans = () => {
       {/* {Card Header} */}
       
       <div className=' px-1 py-3 '>
-        <h1 className='text-4xl font-semibold px-4 font-serif '>Premium</h1>
-        <p className='text-sm ml-7 mt-2 text-gray-400'>Custom Premium Features</p>
+        <h1 className='text-4xl font-semibold px-4 font-serif ml-2 '>Premium</h1>
+        <p className='text-sm ml-8 mt-2 text-gray-400'>Custom Premium Features</p>
 
-        <div className='  justify-center mt-8 '>
+        <div className='  justify-center mt-4 '>
         
-        <span className='text-4xl font-bold ml-8'> €900</span><br/>
         
-        <span className="text-gray-400 text-sm ml-8">+ Susnet Plan €30/Month</span>
+        
+        <span className="text-black font-bold text-4xl ml-10">  €30 <span className='text-gray-400 text-sm font-normal'>/month</span></span>
         </div>
        
         </div>
@@ -155,6 +189,7 @@ const Plans = () => {
        </div>
        </div>
        </div>
+       </section>
 
 
 

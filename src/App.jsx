@@ -12,6 +12,7 @@ import Energybill from "./component/Energybill";
 import Hangging_btn from "./component/Hangging_btn";
 import Footer from "./component/Footer";
 import QuizBrowsePage from "./component/QuizBrowsePage";
+import Plans from "./component/Plans";
 
 
 
@@ -27,6 +28,7 @@ import QuizBrowsePage from "./component/QuizBrowsePage";
         <Outlet/>
         <Hangging_btn/>
         <Footer/>
+       
         
       
         
@@ -60,7 +62,6 @@ import QuizBrowsePage from "./component/QuizBrowsePage";
           path:"/login",
           element:<Login/>,
         },
-        
        
         
        
